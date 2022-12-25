@@ -623,7 +623,6 @@ gap: 24px;
 .modal {
     position: absolute;
     width: 408px;
-    height: 576px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -758,6 +757,7 @@ gap: 24px;
     border: 1.25px solid #2E2F42;
     border-radius: 2px;
     cursor: pointer;
+    margin-right: 10px;
 }
 
 .modal-check:checked + .modal-policy::before {
@@ -777,10 +777,14 @@ gap: 24px;
 }
 
 .modal-policy {
+    display: flex;
+    align-items: center;
     color: #757575;
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.04em;
+    margin-bottom: 24px;
+    
 }
 
 .policy-link {
@@ -797,6 +801,7 @@ gap: 24px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     outline: none;
+    align-self: center;
 }
 
 .btn-submit {
