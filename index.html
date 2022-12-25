@@ -341,6 +341,7 @@
                         <use class="input-icon" href="./images/sprite.svg#icon-person"></use>
                     </svg>
                 </span>
+
             </label>
             <label class="modal-label">
                 <span class="input-desc">Phone</span>
@@ -365,11 +366,9 @@
                 <span class="input-desc">Comment</span>
                 <textarea class="input-message" name="message"  placeholder="Text input"></textarea>
             </label>
-            <label class="modal-label">
-                <input class="modal-check" type="checkbox" name="policy">
-                <span class="modal-policy">I accept the terms and conditions of the </span>
-                <a class="policy-link" href="">Privacy Policy</a>
-            </label>
+                <input id="user-policy" class="modal-check visually-hidden" type="checkbox" name="policy">
+                <label for="user-policy" class="modal-policy"> I accept the terms and conditions of the 
+                <a class="policy-link" href="">Privacy Policy</a></label>
             <button class="modal-btn-submit" type="submit">
                 <span class="btn-submit">Send</span> 
             </button>
