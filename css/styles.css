@@ -762,7 +762,7 @@ gap: 24px;
     background-position: 50% 50%;
 }
 
-.modal-check:focus+.modal-policy::before {
++.modal-policy::before {
     background-color: #404BBF;
     background-image: url(../images/Vector.svg);
     background-repeat: no-repeat;
@@ -796,7 +796,18 @@ gap: 24px;
     opacity: 0;
 }
 
+.modal-check:checked + .icon-chackbox {
+    background-color: #404BBF;
+    opacity: 1;
+}
 
+.modal-check:focus + .icon-chackbox {
+    background: #404BBF;
+    border: 1.25px solid #404BBF;
+    border-radius: 2px;
+    opacity: 1;
+
+}
 
 /*.modal-chackbox.is-hidden {
     opacity: 0;
