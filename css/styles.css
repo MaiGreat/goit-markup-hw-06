@@ -605,7 +605,9 @@ gap: 24px;
 }
 
 /*---------------------------------Subscribe---------------------------------------*/
-
+.sub {
+    margin-bottom: 16px;
+}
 
 .sub-media {
     width: 264px;
@@ -614,7 +616,8 @@ gap: 24px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    
+    color: var(--footer-text);
+    margin-right: 24px;
 }
 
 .sub-media::placeholder {
@@ -622,6 +625,8 @@ gap: 24px;
     line-height: 24px;
     letter-spacing: 0.04em;
     color: rgba(255, 255, 255, 0.6);
+    
+    
 }
 
 .sub-btn {
@@ -629,12 +634,18 @@ gap: 24px;
     height: 40px;
     background-color: var(--accent-color);
     position: relative;
+    
+}
+
+.sub-input {
+    position: relative;
 }
 
 .sub-linl {
     position: absolute;
     right: 0;
     bottom: 0;
+    transform: translateX(-50%);
 }
 
 
