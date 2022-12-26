@@ -737,11 +737,6 @@ gap: 24px;
     margin-bottom: 16px;
 }
 
-/*.modal-check {
-    width: 16px;
-    height: 16px;
-
-}*/
 .input-message::placeholder {
     font-size: 12px;
     line-height: 1.33;
@@ -749,7 +744,7 @@ gap: 24px;
     color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-policy::before {
+/*.modal-policy::before {
     content: "";
     display: block;
     width: 16px;
@@ -767,14 +762,49 @@ gap: 24px;
     background-position: 50% 50%;
 }
 
-.modal-check:focus + .modal-policy::before {
+.modal-check:focus+.modal-policy::before {
     background-color: #404BBF;
     background-image: url(../images/Vector.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     border: 1.25px solid #404BBF;
     border-radius: 2px;
+}*/
+
+.modal-chackbox {
+    display: block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    
+    border: 1.25px solid #2E2F42;
+    border-radius: 2px;
 }
+
+
+.icon-chackbox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #404BBF;
+    opacity: 0;
+}
+
+
+
+/*.modal-chackbox.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}*/
+
+
 
 .modal-policy {
     display: flex;
