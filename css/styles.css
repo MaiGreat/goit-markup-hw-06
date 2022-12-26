@@ -607,6 +607,7 @@ gap: 24px;
 /*---------------------------------Subscribe---------------------------------------*/
 .sub {
     margin-bottom: 16px;
+    
 }
 
 .sub-media {
@@ -622,10 +623,9 @@ gap: 24px;
 
 .sub-media::placeholder {
     font-size: 12px;
-    line-height: 24px;
+    line-height: 2;
     letter-spacing: 0.04em;
     color: rgba(255, 255, 255, 0.6);
-    
     
 }
 
@@ -633,12 +633,15 @@ gap: 24px;
     width: 165px;
     height: 40px;
     background-color: var(--accent-color);
+    border-radius: 4px;
     position: relative;
-    
+    border: none;
 }
 
 .sub-input {
     position: relative;
+
+    
 }
 
 .sub-linl {
@@ -647,7 +650,6 @@ gap: 24px;
     bottom: 0;
     transform: translateX(-50%);
 }
-
 
 
 /*--------------------------------------MODAL-----------------------------*/
@@ -881,7 +883,7 @@ gap: 24px;
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    outline: none;
+    border: none;
     align-self: center;
 }
 
