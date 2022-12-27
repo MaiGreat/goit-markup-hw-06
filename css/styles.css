@@ -610,6 +610,9 @@ gap: 24px;
     
 }
 
+.subscribe {
+    display: flex;
+}
 
 .sub-media {
     width: 264px;
@@ -620,6 +623,7 @@ gap: 24px;
     border-radius: 4px;
     color: var(--footer-text);
     margin-right: 24px;
+    padding-left: 10px;
 }
 
 .sub-media::placeholder {
@@ -627,7 +631,11 @@ gap: 24px;
     line-height: 2;
     letter-spacing: 0.04em;
     color: rgba(255, 255, 255, 0.6);
-    
+}
+
+.sub-media:focus {
+    border: 1px solid var(--accent-color);
+    outline: none;
 }
 
 .sub-btn {
@@ -635,11 +643,17 @@ gap: 24px;
     height: 40px;
     background-color: var(--accent-color);
     border-radius: 4px;
-    
     border: none;
     display: flex;
+    gap: 16px;
+    align-items: center;
     padding: 8px 16px 8px 24px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
 }
 
  .sub-btn:focus,
@@ -652,18 +666,12 @@ gap: 24px;
     0px 2px 1px rgb(46 47 66 / 8%);
  }
 
-.sub-input {
-    position: relative;
-    display: flex;
-    
-}
-
-.sub-linl {
+/*.sub-linl {
     position: absolute;
     right: 0;
     bottom: 0;
     transform: translate(-50%, -50%)
-}
+}*/
 
 
 /*--------------------------------------MODAL-----------------------------*/
@@ -786,6 +794,7 @@ gap: 24px;
 }
 
 .input-message {
+    display: block;
     width: 100%;
     height: 120px;
     padding: 16px 8px;
@@ -793,7 +802,6 @@ gap: 24px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-bottom: 16px;
 }
 
 .input-message:focus {
@@ -916,9 +924,5 @@ gap: 24px;
     
 
 .btn-submit {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #FFFFFF;
+
 }
